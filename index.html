@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal - Victor Picado</title>
+    <style>
+        /* Estilos generales y fondo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Tarjeta principal estilo Glassmorphism */
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        /* Foto de perfil con borde neón */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Títulos */
+        h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #38bdf8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(56, 189, 248, 0.2);
+            padding-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Párrafo de presentación */
+        p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Lista de habilidades/intereses */
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Lista de enlaces / redes sociales */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .link-btn {
+            display: block;
+            background: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .link-btn:hover {
+            background: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(56, 189, 248, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Imagen personal con avatar de ejemplo -->
+        <img src="https://ui-avatars.com/api/?name=Victor+Picado&background=38bdf8&color=fff&size=150" alt="Foto de Victor" class="profile-img">
+
+        <!-- Encabezado principal -->
+        <h1>Victor José Picado Villachica</h1>
+
+        <!-- Párrafo de presentación -->
+        <p>
+            ¡Hola! Soy estudiante de Ingeniería de Sistemas en la Universidad Nacional de Ingeniería (UNI). 
+            Me apasiona la tecnología, el desarrollo de software y la creación de soluciones digitales eficientes.
+        </p>
+
+        <!-- Sección de Habilidades -->
+        <h2>Habilidades e Intereses</h2>
+        <ul class="skills-list">
+            <li>Desarrollo Web</li>
+            <li>Bases de Datos</li>
+            <li>Gestión de Proyectos</li>
+            <li>Sistemas en Internet</li>
+        </ul>
+
+        <!-- Sección de Enlaces -->
+        <h2>Contacto y Redes</h2>
+        <div class="links-container">
+            <a href="https://github.com/Joseph24-vp" target="_blank" class="link-btn">Mi GitHub</a>
+            <a href="https://www.uni.edu.ni" target="_blank" class="link-btn">Universidad Nacional de Ingeniería</a>
+            <a href="https://www.tiktok.com/@josepv242" target="_blank" class="link-btn">Mi TikTok</a>
+        </div>
+    </div>
+
+</body>
+</html>
